@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Calamus ELib</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="version">Version 1.1 Beta</string>
+    <string name="calamus_e_library">Calamus E-Library</string>
+    <string name="search_a_book">Search a book</string>
+    <string name="download">Download</string>
+    <string name="download_complete">Download Complete</string>
+    <string name="preparing_for_downloading">Preparing for downloading...</string>
+    <string name="book_reviews">Book Reviews</string>
+    <string name="get_more_apps_on_playstore">Get More Apps On Playstore</string>
+    <string name="welcome_to_calamus">Welcome to Calamus</string>
+    <string name="call_center">call center</string>
+    <string name="no_account_register_now">No Account? Register Now!</string>
+</resources>

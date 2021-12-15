@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/c"
+        android:layout_width="54dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="10dp">
+
+        <RelativeLayout
+            android:layout_width="54dp"
+            android:layout_height="76dp">
+
+        <ImageView
+            android:id="@+id/iv_book"
+            android:layout_width="54dp"
+            android:layout_height="76dp"
+            android:cropToPadding="true"
+            android:src="@drawable/ic_launcher_background"/>
+
+        <ImageView
+            android:id="@+id/iv_sell"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignEnd="@id/iv_book"
+            android:layout_alignBottom="@id/iv_book"
+
+            android:src="@drawable/ic_point"
+            android:layout_margin="3dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/c"
+        android:layout_alignTop="@id/c"
+        android:text="java Programming book"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/c"
+        android:layout_below="@id/tv_title"
+        android:textColor="#333"
+        android:text="Author - Kaung Htet Tin"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/c"
+        android:layout_below="@id/tv_author"
+        android:textColor="#333"
+        android:text="Des - Introducation for beginners"
+        android:layout_marginTop="4dp"/>
+    
+    <ImageView
+        android:id="@+id/iv_vote"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_baseline_thumb_up_alt_24"
+        android:layout_toEndOf="@id/c"
+        android:layout_below="@id/tv_des"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_votes"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/tv_des"
+        android:layout_toEndOf="@id/iv_vote"
+        android:text="100k votes"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="4dp"/>
+
+    <TextView
+        android:id="@+id/tv_downloadCount"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tv_des"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@drawable/ic_downloaded"
+        android:text="100k downloaded"/>
+
+    <View
+        android:id="@+id/h"
+        android:background="#bbb"
+        android:layout_height="0.5dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/c"/>
+
+</RelativeLayout>

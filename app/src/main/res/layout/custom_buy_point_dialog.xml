@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_nested_container"
+    android:padding="15dp"
+    android:layout_margin="5dp">
+
+    <ImageView
+
+        android:id="@+id/iv_icon"
+        android:src="@mipmap/eemainicon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insufficient Point !"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/iv_icon"
+        android:layout_alignTop="@id/iv_icon"
+        android:layout_alignBottom="@id/iv_icon"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You need to join e-lib to get points"
+        android:layout_toEndOf="@id/iv_icon"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_below="@id/tv_header"/>
+
+    <ImageView
+        android:layout_below="@id/tv_content"
+        android:id="@+id/iv_point"
+        android:layout_width="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_point"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_onePoint"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textColor="#f00"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/bg_header_icon"
+        android:textSize="18sp"
+        android:layout_alignStart="@id/iv_point"
+        android:layout_alignBottom="@id/iv_point"
+        android:text="0"/>
+
+    <Button
+        android:id="@+id/bt_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Join"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_below="@id/iv_point"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/bg_download_button"/>
+
+    <Button
+        android:layout_below="@id/iv_point"
+        android:id="@+id/bt_no"
+        android:text="No"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@drawable/bg_no_button"
+        android:layout_marginStart="15dp" />
+
+</RelativeLayout>

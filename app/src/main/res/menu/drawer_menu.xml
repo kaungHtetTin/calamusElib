@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/get_point"
+            android:icon="@drawable/ic_point"
+            android:title="Get Point" />
+
+        <item
+            android:id="@+id/check_update"
+            android:icon="@drawable/ic_check_update"
+            android:title="Check Update" />
+
+
+        <item
+            android:id="@+id/share_app"
+            android:icon="@drawable/ic_share_app"
+            android:title="Share App" />
+
+        <item
+            android:id="@+id/rate_us"
+            android:icon="@drawable/ic_baseline_rate_review_24"
+            android:title="Rate App" />
+
+        <item
+            android:id="@+id/about_app"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="About App" />
+
+    </group>
+</menu>

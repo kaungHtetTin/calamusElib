@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookListActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Saved Books To Download"
+        android:padding="5dp"/>
+
+    <View
+        android:id="@+id/h"
+        android:background="?android:attr/dividerVertical"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/tv"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/h"/>
+
+    <TextView
+        android:id="@+id/tv_no_saved_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No saved Books"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

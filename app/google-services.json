@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1052833761697",
+    "project_id": "calamuselib",
+    "storage_bucket": "calamuselib.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052833761697:android:3ff9a9353d7a66242723e0",
+        "android_client_info": {
+          "package_name": "com.calamus.calamuselib"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052833761697-bbgg598iih8sh6f5c8h34qlvjbij8j4r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2r2peBzKc52q0l5UwvTxQzq0O49PHa58"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052833761697-bbgg598iih8sh6f5c8h34qlvjbij8j4r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/c"
+                    android:layout_width="54dp"
+                    android:layout_height="76dp"
+                    android:layout_marginEnd="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="54dp"
+                        android:layout_height="76dp">
+
+                        <ImageView
+                            android:id="@+id/iv_book"
+                            android:layout_width="54dp"
+                            android:layout_height="76dp"
+                            android:cropToPadding="true"
+                            android:src="@drawable/ic_launcher_background"/>
+
+                        <ImageView
+                            android:id="@+id/iv_sell"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignEnd="@id/iv_book"
+                            android:layout_alignBottom="@id/iv_book"
+                            android:visibility="gone"
+                            android:src="@drawable/ic_point"
+                            android:layout_margin="3dp"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/c"
+                    android:layout_alignTop="@id/c"
+                    android:text="java Programming book"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tv_author"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/c"
+                    android:layout_below="@id/tv_title"
+                    android:textColor="#333"
+                    android:text="Author - Kaung Htet Tin"
+                    android:layout_marginTop="4dp"/>
+
+                <TextView
+                    android:id="@+id/tv_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/c"
+                    android:layout_below="@id/tv_author"
+                    android:textColor="#333"
+                    android:text="Des - Introducation for beginners"
+                    android:layout_marginTop="4dp"/>
+
+                <ImageView
+                    android:id="@+id/iv_vote"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_baseline_thumb_up_alt_24"
+                    android:layout_toEndOf="@id/c"
+                    android:layout_below="@id/tv_des"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/tv_votes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/tv_des"
+                    android:layout_toEndOf="@id/iv_vote"
+                    android:text="100k votes"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="4dp"/>
+
+                <TextView
+                    android:id="@+id/tv_downloadCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/tv_des"
+                    android:layout_marginTop="5dp"
+                    android:drawableStart="@drawable/ic_downloaded"
+                    android:text="100k downloaded"/>
+
+                <Button
+                    android:id="@+id/bt_download"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bg_download_button"
+                    android:text="@string/download"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/tv_downloadCount"/>
+
+
+                <ProgressBar
+                    android:id="@+id/pb_download"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:progress="50"
+                    android:layout_marginEnd="20dp"
+                    android:layout_below="@id/bt_download"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    style="@android:style/Widget.ProgressBar.Horizontal"/>
+
+                <TextView
+                    android:id="@+id/tv_downloadComplete"
+                    android:layout_below="@id/bt_download"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/download_complete"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    app:drawableStartCompat="@drawable/ic_download_complete" />
+
+                <TextView
+                    android:id="@+id/tv_preparing"
+                    android:layout_below="@id/bt_download"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/preparing_for_downloading"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#555"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/h"
+                android:background="?android:attr/dividerVertical"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"/>
+
+            <TextView
+                android:id="@+id/tv_book_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/book_reviews"
+                android:layout_gravity="center_horizontal"
+                android:textSize="14sp"
+                android:padding="5dp"
+                app:drawableStartCompat="@drawable/ic_baseline_rate_review_24" />
+
+            <View
+                android:background="?android:attr/dividerVertical"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#9DA286"
+                android:textColor="@android:color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:padding="5dp"
+                android:gravity="center"
+                android:text="@string/get_more_apps_on_playstore"
+                android:layout_marginTop="5dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_nested_container">
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/bg_search_et"
+        android:layout_margin="10dp"
+        android:hint="@string/search_a_book"
+        android:inputType="text"
+        android:padding="5dp"
+        android:layout_toStartOf="@id/bt_search"
+        />
+
+    <ImageButton
+        android:id="@+id/bt_search"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/et_search"
+        android:src="@drawable/ic_baseline_search_24"
+        android:background="@drawable/bg_search_bt"
+        android:layout_alignBottom="@id/et_search"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:layout_below="@id/bt_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_baseline_format_list_bulleted_24"
+        android:text="  Category Lists"/>
+
+
+</RelativeLayout>
